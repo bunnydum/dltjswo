@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>fresh</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_inner clearfix">
+                <div class="header_logo">
+                    <a href="index.html"><img src="img/fresh-logo-main.png" alt="프레쉬"></a>
+                </div>
+
+                <div class="floatleft gnb_left">
+                    <div class="btn_side_open_wrap">
+                        <input type="checkbox" id="menu_checkbox">
+                            <label for="menu_checkbox">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </label>
+                    </div>
+                </div>
+
+                <ul class="floatright clearfix gnb_right mobile">
+                    <li class="floatleft_1"><a href="#" target="_blank" title="새창">돋보기</a></li>
+                    <li class="floatleft_2"><a href="https://www.fresh.com/kr/login" target="_blank" title="새창">로그인</a></li>
+                    <li class="floatleft_3"><a href="https://www.fresh.com/kr/%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%85%80%EB%9F%AC" target="_blank" title="새창">장바구니</a></li>
+                </ul>
+
+                <div id="side_wrap">
+                    <div class="side_nav">
+                        <ul>
+                            <li>
+                                <a href="#" class="h5_txt">about fresh</a>
+                                <ul>
+                                    <li class="about_1"><a href="https://www.fresh.com/kr/aboutus.html">프레쉬 소개</a></li>
+                                    <li class="about_2"><a href="https://www.fresh.com/kr/stories">프레쉬 블로그</a></li>
+                                    <li class="about_3"><a href="https://www.fresh.com/kr/Fresh-Rewards.html">프레쉬 리워드</a></li>
+                                </ul>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="h5_txt">shopping</a>
+                                <ul>
+                                    <li class="sh"><a href="https://www.fresh.com/kr/promotionshow">공식몰 혜택</a></li>
+                                    <li class="sh"><a href="https://www.fresh.com/kr/%EC%9D%B4%EB%8B%AC%EC%9D%98-%EC%84%B8%ED%8A%B8">이달의 세트</a></li>
+                                    <li class="sh"><a href="https://www.fresh.com/kr/%EC%8B%A0%EC%A0%9C%ED%92%88">신제품</a></li>
+                                    <li class="sh"><a href="https://www.fresh.com/kr/%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%85%80%EB%9F%AC">베스트 셀러</a></li>
+                                    <li class="sh"><a href="https://www.fresh.com/kr/%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4">스킨케어</a></li>
+                                    <li class="sh"><a href="https://www.fresh.com/kr/%EB%A6%BD-%EC%BC%80%EC%96%B4">립케어</a></li>
+                                    <li class="sh"><a href="https://www.fresh.com/kr/%EB%B0%94%EB%94%94%EC%BC%80%EC%96%B4">바디케어</a></li>
+                                    <li class="sh"><a href="https://www.fresh.com/kr/%ED%96%A5%EC%88%98">향수</a></li>
+                                    <li class="sh"><a href="https://www.fresh.com/kr/%EA%B8%B0%ED%94%84%ED%8C%85">기프팅</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+           
+        </header><!--  header  -->
+
+        <div id="visual">
+            <div class="visual_inner">
+                <div class="banner">
+                    <div class="banner_inner">
+                        <div class="v1">
+                            <a href="#"></a>
+                            <div class="banner_txt_v1">
+                                <strong>Gift a Moment of Magic</strong>
+                                <p>마법같은 순간으로 채워진 홀리데이 시즌을
+                                    <span>fresh와 함께 하세요</span> 
+                                    <span>Holiday special 세트와 공식몰 만의</span>
+                                    <span>특별한 세트로 따듯한 마음을 전해보세요</span>
+                                </p>
+                                <a href="https://www.fresh.com/kr/%EC%9D%B4%EB%8B%AC%EC%9D%98-%EC%84%B8%ED%8A%B8">구매하기</a>
+                            </div>
+                        </div>
+
+                        <div class="v2">
+                            <a href="#"></a>
+                            <div class="banner_txt_v2">
+                                <strong>각인으로 완성하는<span>특별한 선물</span></strong>
+                                <p>나만의 문구를 추가하여 특별한 선물을 완성해보세요
+                                    <span>각인 가능 제품 구매시, 슈가 립 어드밴스드</span> 
+                                    <span>테라피 미니를 선물로 드립니다</span>
+                                </p>
+                                <a href="https://www.fresh.com/kr/kr_engraving.html">구매하기</a>
+                            </div>
+                        </div>
+
+                        <div class="v3">
+                            <a href="#"></a>
+                            <div class="banner_txt_v3">
+                                <strong>시간에 맞서는 피부 본연의 힘</strong>
+                                <p>인도양 남서부에 위치한 아프리카의 작은섬, 
+                                    <span>모리셔스에서 시작된</span> 
+                                    <span>fresh 스킨케어의 새로운 혁신</span>
+                                </p>
+                                <a href="https://www.fresh.com/kr/%EC%9D%B4%EB%8B%AC%EC%9D%98-%EC%84%B8%ED%8A%B8/%ED%8B%B0-%EC%97%98%EB%A6%AD%EC%8B%9C%EC%96%B4-%EC%84%B8%EB%9F%BC-50ml-%EC%84%B8%ED%8A%B8-KR_22_10_TE50.html">구매하기</a>
+                            </div>
+                        </div>
+
+                        <div class="v4">
+                            <a href="#"></a>
+                            <div class="banner_txt_v4">
+                                <strong>건강하게 빛나는 피부를 위한<span>데일리 항산화 케어</span></strong>
+                                <p>No.1 콤부차 페이셜 트리트먼트 에센스</p>
+                                <a href="https://www.fresh.com/kr/%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC/%EC%97%90%EC%84%BC%EC%8A%A4%26%EC%84%B8%EB%9F%BC/%EC%BD%A4%EB%B6%80%EC%B0%A8-%ED%8E%98%EC%9D%B4%EC%85%9C-%ED%8A%B8%EB%A6%AC%ED%8A%B8%EB%A8%BC%ED%8A%B8-%EC%97%90%EC%84%BC%EC%8A%A4-250ml-H00004659.html">구매하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div><!--  visual  -->
+
+        <div id="mainContents">
+            <main>
+                <section id="brand">
+                    <div class="brand_inner clear">
+                        <div class="brand_title">
+                            <h2>믿고 사용할 수<span>있는 브랜드</span></h2>
+                            <p>프레쉬는 제품에 절대 배합하지 않는 성분만큼,<span>제품에 함유하는 성분도 매우 중요하게 생각합니다.</span></p>
+                        </div>
+                        
+                        <div class="brandList">
+                            <ul class="brand_list">
+                                <li class="list_1">프레쉬는 한 품목을 개발 및 출시할 때 최소 2년간 수많은 과정과 단계를 거칩니다.</li>
+                                <li class="list_2">포뮬러 제조 전 기획 단계부터 각분야의 전문가들이 원료와 성분을 세심하게 검토하며 모든 성분에 대한 검증이 끝난 뒤 비로소 개발을 시작합니다. 또한 최종적으로 완성된 제품도 피부 전문가의 추가 테스트 과정을 거칩니다.</li>
+                                <li class="list_3">믿고 사용할 수 있도록 제품의 안정성을 확인하며 만드는 것이 우리의 핵심 가치이기 때문입니다.</li>
+                            </ul>    
+                        </div>
+
+                        <div class="">
+                            <div class="brand_list_btn">
+                                <button type="button" class="brand_btn">더보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--  brand  -->
+
+
+                <section id="BestSeller">
+                    <div class="BestSeller_inner_left clear">
+                        <h2>Best Seller</h2>
+                        <p>프레쉬 공식몰의 베스트셀러를 만나보세요</p>
+                        <a href="#">베스트셀러 더보기</a>
+                    </div>
+
+                    <div class="BestSeller_inner_right clear">
+                        <ul class="prdList">
+                            <div class="slick_list">
+                                <div class="slick_active01">
+                                    <div>
+                                        <li id="BoxId01" class="item01">
+                                            <div class="thumbnail01">
+                                                <div class="prdImg01">
+                                                   <a href="https://www.fresh.com/kr/%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%85%80%EB%9F%AC/%5B%EA%B3%B5%EC%8B%9D%EB%AA%B0-%EB%8B%A8%EB%8F%85%5D-%EC%BD%A4%EB%B6%80%EC%B0%A8-%ED%8A%B8%EB%A6%AC%ED%8A%B8%EB%A8%BC%ED%8A%B8-%EC%97%90%EC%84%BC%EC%8A%A4-%EC%84%B8%ED%8A%B8-%28250ml-%26-150ml%29-KR_22_SET_KBC_250ml150ml_2.html">
+                                                        <img src="img/fresh-bestseller-01-mobile.png" alt="콤부차 트리트먼트 에센스 세트">
+                                                   </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="description01">
+                                                <div class="clearfix">
+                                                    <div class="floatleft01">
+                                                        <strong>[공식몰 단독]<span>콤부차 트리트먼트 에센스 세트</span></strong>
+                                                    </div>
+
+                                                    <div class="floatright01">
+                                                        <ul>
+                                                            <li>
+                                                                <strong>258,000원</strong>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="btn_wrap01">
+                                                    <div class="btn_txt01">cart</div>
+                                                    <span class="wish01">
+                                                        <img src="img/fresh-icon-heart.svg">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+
+                                <div class="slick_active02">
+                                    <div>
+                                        <li id="BoxId02" class="item02">
+                                            <div class="thumbnail02">
+                                                <div class="prdImg02">
+                                                   <a href="https://www.fresh.com/kr/%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%85%80%EB%9F%AC/%5B%EA%B3%B5%EC%8B%9D%EB%AA%B0-%EB%8B%A8%EB%8F%85%5D-%EC%86%8C%EC%9D%B4-%ED%8E%98%EC%9D%B4%EC%8A%A4-%ED%81%B4%EB%A0%8C%EC%A0%80-150ml-%EC%84%B8%ED%8A%B8-KR_22_SET_SOY150ml.html">
+                                                        <img src="img/fresh-bestseller-02-mobile.png" alt="소이 페이스 클렌저 150ml 세트">
+                                                   </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="description02">
+                                                <div class="clearfix">
+                                                    <div class="floatleft02">
+                                                        <strong>[공식몰 단독]<span>소이 페이스 클렌져 150ml세트</span></strong>
+                                                    </div>
+
+                                                    <div class="floatright02">
+                                                        <ul>
+                                                            <li>
+                                                                <strong>57,000원</strong>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="btn_wrap02">
+                                                    <div class="btn_txt02">cart</div>
+                                                    <span class="wish02">
+                                                        <img src="img/fresh-icon-heart.svg">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="slick_active03">
+                                    <div>
+                                        <li id="BoxId03" class="item03">
+                                            <div class="thumbnail03">
+                                                <div class="prdImg03">
+                                                   <a href="https://www.fresh.com/kr/%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%85%80%EB%9F%AC/%5B%EA%B3%B5%EC%8B%9D%EB%AA%B0-%EB%8B%A8%EB%8F%85%5D-%ED%97%A4%EC%8A%A4%ED%8E%98%EB%A6%AC%EB%8D%B0%EC%8A%A4-%EC%9E%90%EB%AA%BD-%ED%96%A5%EC%88%98-100ml-%EC%84%B8%ED%8A%B8-KR_22_SET_HESP100ml.html">
+                                                        <img src="img/fresh-bestseller-03-mobile.png" alt="헤스페리데스 자몽 향수 100ml 세트">
+                                                   </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="description03">
+                                                <div class="clearfix">
+                                                    <div class="floatleft03">
+                                                        <strong>[공식몰 단독]<span>헤스페리데스 자몽 향수100ml</span></strong>
+                                                    </div>
+
+                                                    <div class="floatright03">
+                                                        <ul>
+                                                            <li>
+                                                                <strong>165,000원</strong>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="btn_wrap03">
+                                                    <div class="btn_txt03">cart</div>
+                                                    <span class="wish03">
+                                                        <img src="img/fresh-icon-heart.svg">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="slick_active04">
+                                    <div>
+                                        <li id="BoxId04" class="item04">
+                                            <div class="thumbnail04">
+                                                <div class="prdImg04">
+                                                   <a href="https://www.fresh.com/kr/%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%85%80%EB%9F%AC/%5B%EA%B3%B5%EC%8B%9D%EB%AA%B0-%EB%8B%A8%EB%8F%85%5D--%EB%B0%80%ED%81%AC-%EB%B0%94%EB%94%94-%EB%93%80%EC%98%A4-%EC%84%B8%ED%8A%B8-KR_22_SET_MilkbodyDuo_2.html">
+                                                        <img src="img/fresh-bestseller-04-mobile.png" alt="밀크 바디 듀오 세트">
+                                                   </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="description04">
+                                                <div class="clearfix">
+                                                    <div class="floatleft04">
+                                                        <strong>[공식몰 단독]<span>밀크 바디 듀오 세트</span></strong>
+                                                    </div>
+
+                                                    <div class="floatright04">
+                                                        <ul>
+                                                            <li>
+                                                                <strong>93,000원</strong>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="btn_wrap04">
+                                                    <div class="btn_txt04">cart</div>
+                                                    <span class="wish04">
+                                                        <img src="img/fresh-icon-heart.svg">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </div>   
+                </section><!--  BestSeller  -->
+
+                <section id="Category">
+                    <div class="Category_inner_left clear">
+                        <h2>Category</h2>
+                        <p>프레쉬의 제품들을 만나보세요</p>
+                        <a href="#">제품 더보기</a>
+                    </div>
+
+                    <div class="Category_inner_right clear">
+                        <ul class="Ca_prdList">
+                            <div class="Ca_slick_list">
+                                <div class="Ca_slick_active01">
+                                    <div>
+                                        <li id="Ca_BoxId01" class="Ca_item01">
+                                            <div class="Ca_thumbnail01">
+                                                <div class="Ca_prdImg01">
+                                                    <a href="https://www.fresh.com/kr/%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC/%EC%97%90%EC%84%BC%EC%8A%A4%26%EC%84%B8%EB%9F%BC">
+                                                        <img src="img/fresh-category-essence-mobile.png" alt="에센스&세럼">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="Ca_description01">
+                                                <div class="Ca_btn_wrap01">
+                                                    <div class="Ca_btn_txt01">에센스&세럼</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="Ca_slick_active02">
+                                    <div>
+                                        <li id="Ca_BoxId02" class="Ca_item02">
+                                            <div class="Ca_thumbnail02">
+                                                <div class="Ca_prdImg02">
+                                                    <a href="https://www.fresh.com/kr/%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC/%ED%81%B4%EB%A0%8C%EC%A0%80">
+                                                        <img src="img/fresh-category-cleaning-mobile.png" alt="클렌저">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="Ca_description02">
+                                                <div class="Ca_btn_wrap02">
+                                                    <div class="Ca_btn_txt02">클렌저</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+                                 
+                                <div class="Ca_slick_active03">
+                                    <div>
+                                        <li id="Ca_BoxId03" class="Ca_item03">
+                                            <div class="Ca_thumbnail03">
+                                                <div class="Ca_prdImg03">
+                                                    <a href="https://www.fresh.com/kr/%ED%96%A5%EC%88%98">
+                                                        <img src="img/fresh-category-perfum-mobile.png" alt="향수">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="Ca_description03">
+                                                <div class="Ca_btn_wrap03">
+                                                    <div class="Ca_btn_txt03">향수</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="Ca_slick_active04">
+                                    <div>
+                                        <li id="Ca_BoxId04" class="Ca_item04">
+                                            <div class="Ca_thumbnail04">
+                                                <div class="Ca_prdImg04">
+                                                    <a href="https://www.fresh.com/kr/%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC/%EB%AA%A8%EC%9D%B4%EC%8A%A4%EC%B2%98%EB%9D%BC%EC%9D%B4%EC%A0%80">
+                                                        <img src="img/fresh-category-lip-mobile.png" alt="립케어">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="Ca_description04">
+                                                <div class="Ca_btn_wrap04">
+                                                    <div class="Ca_btn_txt04">립 케어</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="Ca_slick_active05">
+                                    <div>
+                                        <li id="Ca_BoxId05" class="Ca_item05">
+                                            <div class="Ca_thumbnail05">
+                                                <div class="Ca_prdImg05">
+                                                    <a href="https://www.fresh.com/kr/%EB%A6%BD-%EC%BC%80%EC%96%B4">
+                                                        <img src="img/fresh-category-lip-mobile.png" alt="립 케어">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="Ca_description05">
+                                                <div class="Ca_btn_wrap05">
+                                                    <div class="Ca_btn_txt05">립 케어</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="slick_next slick-arrow"></button>
+                        </ul>
+                    </div>
+                </section><!--  Category  -->
+
+                <section id="Collection">
+                    <div class="Collection_inner_left clear">
+                        <h2>Collection</h2>
+                        <p>프레쉬의 컬렉션을 소개합니다</p>
+                        <a href="#">컬렉션 더보기</a>
+                    </div>
+
+                    <div class="Collection_inner_right clear">
+                        <ul class="Co_prdList">
+                            <div class="Co_slick_list">
+                                <div class="Co_slick_active01">
+                                    <div>
+                                        <li id="Co_BoxId01" class="Co_item01">
+                                            <div class="Co_thumbnail01">
+                                                <div class="Co_prdImg01">
+                                                    <a href="https://www.fresh.com/kr/%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4/%EC%BB%AC%EB%A0%89%EC%85%98/%EC%86%8C%EC%9D%B4">
+                                                        <img src="img/fresh-collection-soy-mobile.png" alt="소이">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="Co_description01">
+                                                <div class="Co_btn_wrap01">
+                                                    <div class="Co_btn_txt01">소이</div>
+                                                    <div class="Co_btn_txt_small01">클렌징</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="Co_slick_active02">
+                                    <div>
+                                        <li id="Co_BoxId02" class="Co_item02">
+                                            <div class="Co_thumbnail02">
+                                                <div class="Co_prdImg02">
+                                                    <a href="https://www.fresh.com/kr/%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4/%EC%BB%AC%EB%A0%89%EC%85%98/%EB%B8%94%EB%9E%99%ED%8B%B0">
+                                                        <img src="img/fresh-collection-tea-mobile.png" alt="블랙티">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="Co_description02">
+                                                <div class="Co_btn_wrap02">
+                                                    <div class="Co_btn_txt02">블랙티</div>
+                                                    <div class="Co_btn_txt_small02">탄력</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="Co_slick_active03">
+                                    <div>
+                                        <li id="Co_BoxId03" class="Co_item03">
+                                            <div class="Co_thumbnail03">
+                                                <div class="Co_prdImg03">
+                                                    <a href="https://www.fresh.com/kr/%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4/%EC%BB%AC%EB%A0%89%EC%85%98/%EB%A1%9C%ED%84%B0%EC%8A%A4-1">
+                                                        <img src="img/fresh-collection-rotus-mobile.png" alt="로터스">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="Co_description03">
+                                                <div class="Co_btn_wrap03">
+                                                    <div class="Co_btn_txt03">로터스</div>
+                                                    <div class="Co_btn_txt_small03">유스 프리저브</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="Co_slick_active04">
+                                    <div>
+                                        <li id="Co_BoxId04" class="Co_item04">
+                                            <div class="Co_thumbnail04">
+                                                <div class="Co_prdImg04">
+                                                    <a href="https://www.fresh.com/kr/%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4/%EC%BB%AC%EB%A0%89%EC%85%98/%EB%A1%9C%EC%A6%88/%EB%A1%9C%EC%A6%88">
+                                                        <img src="img/fresh-collection-rose-mobile.png" alt="로즈">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="Co_description04">
+                                                <div class="Co_btn_wrap04">
+                                                    <div class="Co_btn_txt04">로즈</div>
+                                                    <div class="Co_btn_txt_small04">딥 하이드레이션</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <div class="Co_slick_active05">
+                                    <div>
+                                        <li id="Co_BoxId05" class="Co_item05">
+                                            <div class="Co_thumbnail05">
+                                                <div class="Co_prdImg05">
+                                                    <a href="https://www.fresh.com/kr/%EC%8A%A4%ED%82%A8%EC%BC%80%EC%96%B4/%EC%BB%AC%EB%A0%89%EC%85%98/%ED%81%AC%EB%A0%98-%EC%95%99%EC%94%A8%EC%97%94%EB%8A%90">
+                                                        <img src="img/fresh-collection-cream.jpg" alt="크렘 앙씨엔느">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="Co_description05">
+                                                <div class="Co_btn_wrap05">
+                                                    <div class="Co_btn_txt05">크렘 앙씨엔느</div>
+                                                    <div class="Co_btn_txt_small05">럭셔리 스킨케어</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="slick_next slick-arrow"></button>
+                        </ul>
+                    </div>
+                </section><!--  Collection  -->
+
+                <section id="fresh">
+                    <div class="fresh_inner clear">
+                        <div class="fresh_title">
+                            <h2>forever fresh</h2>
+                            <p>지속가능성을 위한 프레쉬의 약속</p>
+                        </div>
+
+                        <div class="freshList">
+                            <ul class="fresh_list">
+                                <li class="list_4">지구와 사람을 존중하는 재료 수급 방식 개선을 위해 UEBT(Union for Ethical Bio Trade) 단체와 지속적인 파트너쉽을 구축하겠습니다.</li>
+                                <li class="list_5">2025년까지 프레쉬 제품의 패키지 100%를 재생원료 혹은 재활용 가능한 소재로 제작하겠습니다.</li>
+                                <li class="list_6">2030년까지 탄소중립 달성을 위해 파리 기후 조약에 부합하는 탄소 배출 저감 목표를 세팅하고 잔여 배출량을 조절하겠습니다.</li>
+                            </ul>
+                        </div>
+                            
+                        <div class="">
+                            <div class="fresh_list_btn">
+                                <button type="button" class="brand_btn">더보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--  fresh  -->
+            </main>
+        </div>
+
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer">
+                    <div class="clearfix">
+                        <div class="floatright_footer">
+                            <ul class="footer_accordion clearfix">
+                                <li class="floatleft_footer">
+                                    <p class="large_txt">ABOUT FRESH</p>
+                                    <ul class="hide">
+                                        <li><a href="https://www.fresh.com/kr/aboutus.html" target="_blank" title="새창">프레쉬 소개</a></li>
+                                        <li><a href="https://www.fresh.com/kr/stories" target="_blank" title="새창">프레쉬 블로그</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="floatleft_footer">
+                                    <p class="large_txt">MY FRESH</p>
+                                    <ul class="hide">
+                                        <li><a href="https://www.fresh.com/kr/login?rurl=1" target="_blank" title="새창">내 계정보기</a></li>
+                                        <li><a href="https://www.fresh.com/kr/logintrackorder" target="_blank" title="새창">주문 현황 보기</a></li>
+                                        <li><a href="https://www.fresh.com/kr/login?rurl=1" target="_blank" title="새창">리워드</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="floatleft_footer">
+                                    <p class="large_txt">CONTACT US</p>
+                                    <ul class="hide">
+                                        <li><a href="https://www.fresh.com/kr/customer-service/ContactUs.html" target="_blank" title="새창">고객지원</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="floatleft_footer">
+                                    <p class="large_txt">HELP</p>
+                                    <ul class="hide">
+                                        <li><a href="https://www.fresh.com/kr/customer-service/Faq.html" target="_blank" title="새창">자주하는 질문</a></li>
+                                        <li><a href="https://www.fresh.com/kr/customer-service/ShippingAndReturnsPolicy.html" target="_blank" title="새창">배송/반품정책</a></li>
+                                        <li><a href="https://www.fresh.com/kr/customer-service/PrivacyPolicy_221223.html" target="_blank" title="새창">개인정보 처리 방침</a></li>
+                                        <li><a href="https://www.fresh.com/kr/customer-service/TermsAndConditions.html" target="_blank" title="새창">서비스 이용약관</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <div class="copyrights_wrap">
+                                <p class="small_txt01">프레쉬코리아(유)</p>
+                                <p class="small_txt02">주소: 서울특별시 종로구 종로3길 17, 10층 (청진동, 광화문 D타워)<br>
+                                사업자 등록번호: 211-88-81353<br>
+                                대표자: 앤마리데니스콜리넷<br>
+                                통신판매업 신고: 2018-서울종로-1107호<br>
+                                사업자 정보 확인<br>
+                                개인정보책임관리자: 김정선<br>
+                                고객센터: 080-822-9500<br> 
+                                호스팅 서비스: Salesforce<br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="floatleft_logo">
+                            <img src="img/fresh-logo-footer.png">
+                            <p class="copyrights_small_txt">©<span class="footer_year">2022</span>,Fresh Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>    
+    </div><!--  wrap  -->
+</body>
+</html>
