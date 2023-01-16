@@ -1757,7 +1757,7 @@ main {padding-top: 150px;}
         display: block;
         width: 100%;
         height: 764PX;
-        background: url(../img/fresh-visual-01-pc.png) no-repeat center/cover;
+        background-image: url(../img/fresh-visual-01-pc.png) no-repeat center/cover;
     }
     .banner_txt_v1 {
         position: absolute;
