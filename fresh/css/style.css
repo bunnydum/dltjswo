@@ -253,11 +253,14 @@ label div:last-child {
     height: auto;
     padding-left: 6.933%; /*26/375*/
 }
-.banner_txt_v1 strong {
+.banner_txt_v1 {
+    position: absolute;
+    padding-top: 464px;
+    left: 0;
+    top: 0;
     width: 100%;
-    font-size: 2.6rem;
-    line-height: 1.538; /*40/26*/
-    color: #fff;
+    height: auto;
+    padding-left: 6.933%; /*26/375*/
 }
 .banner_txt_v1 p {
     font-size: 1.5rem;
@@ -267,6 +270,13 @@ label div:last-child {
     padding-top: 12px;
 }
 .banner_txt_v1 p span {display: block;}
+.banner_txt_v1 strong {
+    width: 100%;
+    font-size: 2.6rem;
+    line-height: 1.538; /*40/26*/
+    color: #fff;
+}
+.banner_txt_v1 strong span {display: block;}
 .banner_txt_v1 a {
     display: inline-block;
     width: 100px;
@@ -1733,7 +1743,7 @@ main {padding-top: 150px;}
     }
 
 
-    /* visual - mobile */
+    /* visual - pc */
     #visual {
         position: relative;
         margin-top: 65px;
@@ -1747,7 +1757,7 @@ main {padding-top: 150px;}
         display: block;
         width: 100%;
         height: 764PX;
-        background: url(../img/fresh-visual-01.png) no-repeat center/cover;
+        background: url(../img/fresh-visual-01-pc.png) no-repeat center/cover;
     }
     .banner_txt_v1 {
         position: absolute;
