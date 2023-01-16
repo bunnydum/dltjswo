@@ -1751,18 +1751,12 @@ main {padding-top: 150px;}
     }
     .banner_txt_v1 {
         position: absolute;
-        padding-top: 489px;
+        padding-top: 464px;
         left: 0;
         top: 0;
         width: 100%;
         height: auto;
         padding-left: 6.933%; /*26/375*/
-    }
-    .banner_txt_v1 strong {
-        width: 100%;
-        font-size: 2.6rem;
-        line-height: 1.538; /*40/26*/
-        color: #fff;
     }
     .banner_txt_v1 p {
         font-size: 1.5rem;
@@ -1772,6 +1766,13 @@ main {padding-top: 150px;}
         padding-top: 12px;
     }
     .banner_txt_v1 p span {display: block;}
+    .banner_txt_v1 strong {
+        width: 100%;
+        font-size: 2.6rem;
+        line-height: 1.538; /*40/26*/
+        color: #fff;
+    }
+    .banner_txt_v1 strong span {display: block;}
     .banner_txt_v1 a {
         display: inline-block;
         width: 100px;
