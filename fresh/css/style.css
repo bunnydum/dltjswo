@@ -122,10 +122,11 @@ label div:last-child {
 }
   
 #menu_checkbox:checked + label div {
-    width: 6px;
+    width: 5px;
+    height: 5px;
     margin-left: 12px;
-    margin-bottom: 3px;
-    background-color: #dfdfdf;
+    margin-bottom: 5px;
+    background-color: #A2A2A2;
 }
   
 #side_wrap.nav_on {display: block;}
@@ -242,18 +243,7 @@ label div:last-child {
     display: block;
     width: 100%;
     height: 764PX;
-    background-image: url(../img/fresh-visual-01.png), url(../img/fresh-visual-01-pc.png);
-    background-size: 100%, 100%;
-    background-repeat: no-repeat;
-}
-.banner_txt_v1 {
-    position: absolute;
-    padding-top: 489px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    padding-left: 6.933%; /*26/375*/
+    background: url(../img/fresh-visual-01.png) no-repeat center/cover;
 }
 .banner_txt_v1 {
     position: absolute;
@@ -278,7 +268,7 @@ label div:last-child {
     line-height: 1.538; /*40/26*/
     color: #fff;
 }
-.banner_txt_v1 strong span {display: block;}
+.banner_txt_v1 strong > span {display: block;}
 .banner_txt_v1 a {
     display: inline-block;
     width: 100px;
@@ -501,7 +491,7 @@ main {padding-top: 150px;}
 .brand_title p {
     position: absolute;
     margin-top: 290px;
-    padding-right: 6.666%;
+    padding-left: 5.5%;
     font-size: 1.7rem;
     font-weight: normal;
     font-family: 'SUIT-Medium', sans-serif;
@@ -509,7 +499,6 @@ main {padding-top: 150px;}
     text-align: right;
     color: #fff;
 }
-.brand_title p span {display: inline-block;}
 .brandList {position: relative;}
 
 .list_1 {
@@ -658,7 +647,6 @@ main {padding-top: 150px;}
     color: #000;
 }
 .floatleft01 strong {}
-.floatleft01 strong span {display: inline-block;}
 
 .floatright01 {
     position: absolute;
@@ -729,7 +717,6 @@ main {padding-top: 150px;}
     color: #000;
 }
 .floatleft02 strong {}
-.floatleft02 strong span {display: inline-block;}
 
 .floatright02 {
     position: absolute;
@@ -800,7 +787,6 @@ main {padding-top: 150px;}
     color: #000;
 }
 .floatleft03 strong {}
-.floatleft03 strong span {display: inline-block;}
 
 .floatright03 {
     position: absolute;
@@ -872,7 +858,6 @@ main {padding-top: 150px;}
     color: #000;
 }
 .floatleft04 strong {}
-.floatleft04 strong span {display: inline-block;}
 
 .floatright04 {
     position: absolute;
@@ -1567,7 +1552,7 @@ main {padding-top: 150px;}
         top: 0;
         z-index: 100;
         width: 100%;
-        height: 80px;
+        height: 45px;
         background-color: #E3F0F8;
     }
     .header_inner {
@@ -1576,17 +1561,18 @@ main {padding-top: 150px;}
     }
     .header_logo {
         position: absolute;
-        text-align: center;
-        margin-top: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .header_logo a {}
-    .header_logo a img {width: 75px;}
+    .header_logo a img {width: 60px;}
 
     .floatleft {float: left;}
     .btn_side_open_wrap {
         position: absolute;
         left: 3%;
-        top: 45px;
+        top: 30px;
         outline: transparent;
         -webkit-tap-highlight-color: transparent;
         z-index: 1010;
@@ -1600,7 +1586,7 @@ main {padding-top: 150px;}
         position: absolute;
         top: 50%;
         right: 0;
-        left: 0;
+        left: -25px;
         margin: 0 auto;
         display: block;
         width: 30px;
@@ -1611,12 +1597,12 @@ main {padding-top: 150px;}
     }
     
     label div {
-        width: 4px;
-        height: 4px;
+        width: 2px;
+        height: 2px;
         background-color: #303E48;
         margin-left: 0;
-        margin-bottom: 4px;
-        border-radius: 4px;
+        margin-bottom: 6px;
+        border-radius: 2px;
         transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
         0.3s ease background-color;
     }
@@ -1635,14 +1621,17 @@ main {padding-top: 150px;}
     }
     
     #menu_checkbox:checked + label {
+        left: -20px;
+        top: -10px;
         transform: translateY(-50%) rotateZ(-90deg);
     }
     
     #menu_checkbox:checked + label div {
-        width: 6px;
-        margin-left: 12px;
+        width: 5px;
+        height: 5px;
+        margin-left: 5px;
         margin-bottom: 3px;
-        background-color: #dfdfdf;
+        background-color: #A2A2A2;
     }
     
     #side_wrap.nav_on {display: block;}
@@ -1652,37 +1641,54 @@ main {padding-top: 150px;}
     .floatright {
         float: right;
         position: relative;
-        width: 112px;
     }
     .floatleft_1 {
-        display: none;
-        float: left;
-        margin-top: 20px;
-        width: 30px;
-        height: 30px;
-        background: url(../img/icon_search.svg) no-repeat center/contain;
-        text-indent: -9999px;
-        overflow: hidden;
+        display:block; 
+        text-indent:0; 
+        overflow:visible; 
+        background: none;    
     }
+    .btn_search {
+        position: relative;
+        width: 150px;
+        height: 30px;
+        margin-right: 30px;
+        line-height: 30px;
+    }
+    .btn_search_img_wrap {}
+    .btn_search_img_wrap img {
+        width: 20px;
+        height: 20px;
+        margin-top: -24px;
+        margin-left: -18px;
+    }
+    .btn_search_line {
+        position: absolute;
+        display: block;
+        width: 83%;
+        left: 0;
+        bottom: 5px;
+        border-bottom: 1px solid #183A31;
+        border-color: #183A31;
+        transition: all .5s liner;
+    }
+
+
     .floatleft_2 { 
         float: left;
-        margin-top: 25px;
-        margin-left: 45px;
-        width: 30px;
-        height: 30px;
+        margin-top: 11px;
+        margin-left: 28px;
+        width: 20px;
+        height: 20px;
         background: url(../img/icon_mypage.svg) no-repeat center/contain;
-        text-indent: -9999px;
-        overflow: hidden;
     }
     .floatleft_3 {
         float: right;
-        margin-top: 25px;
-        margin-right: 3%;
-        width: 30px;
-        height: 30px;
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
         background: url(../img/icon_cart.svg) no-repeat center/contain;
-        text-indent: -9999px;
-        overflow: hidden;
     }
 
     #side_wrap {
@@ -1691,7 +1697,7 @@ main {padding-top: 150px;}
         height: 754px;
         padding: 80px 30px 30px 30px;
         width: 80%;
-        max-width: 300px;
+        max-width: 350px;
         z-index: 1000;
         background-color: #E3F0F8;
         backdrop-filter: blur(50px);
@@ -1703,40 +1709,53 @@ main {padding-top: 150px;}
         width: 100%;
     }
     .h5_txt {
-        display: none;
+        display: block;
         position: relative;
-        margin-bottom: 25px;
-        font-size: 4.5rem;
-        font-family: 'SUIT-Medium', sans-serif;
+        margin-bottom: 30px;
+        font-size: 3.5rem;
         color: #000;
+        font-family: 'jejumyeongjo', sans-serif;
     }
-    .h5_txt ul {}
     .about_1 {
-        display: none;
+        display: block;
+        margin-left: 15px;
         margin-bottom: 25px;
-        font-size: 1.5rem;
-        color: #000;
+        font-size: 1.4rem;
         font-family: 'SUIT-Medium', sans-serif;
     }
+    .about_1 > a {color: #A2A2A2;}
     .about_2 {
-        display: none;
+        display: block;
+        margin-left: 15px;
         margin-bottom: 25px;
-        font-size: 1.5rem;
-        color: #A2A2A2;
+        font-size: 1.4rem;
         font-family: 'SUIT-Medium', sans-serif;
     }
+    .about_2 > a {color: #A2A2A2;}
     .about_3 {
-        display: none;
+        display: block;
+        margin-left: 15px;
         margin-bottom: 25px;
-        font-size: 1.5rem;
-        color: #A2A2A2;
+        font-size: 1.4rem;
         font-family: 'SUIT-Medium', sans-serif;
+    }
+    .about_3 > a {color: #A2A2A2;}
+
+    .about_1>a:hover {
+        color: #000;
+    }
+    .about_2>a:hover {
+        color: #000;
+    }
+    .about_3>a:hover {
+        color: #000;
     }
 
     .sh a{
         display: block;
+        margin-left: 15px;
         margin-bottom: 25px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: #A2A2A2;
         font-family: 'SUIT-Medium', sans-serif;
     }
@@ -1748,7 +1767,7 @@ main {padding-top: 150px;}
     /* visual - pc */
     #visual {
         position: relative;
-        margin-top: 65px;
+        margin-top: 25px;
     }
     .visual_inner {height: 764px;}
     .banner {}
@@ -1759,20 +1778,19 @@ main {padding-top: 150px;}
         display: block;
         width: 100%;
         height: 764PX;
-        background-image: url(../img/fresh-visual-01-pc.png) no-repeat center/cover;
+        background: url(/fresh/img/fresh-visual-01-pc.png) no-repeat center/cover;
     }
     .banner_txt_v1 {
         position: absolute;
-        padding-top: 464px;
+        padding-top: 350px;
         left: 0;
         top: 0;
         width: 100%;
         height: auto;
-        padding-left: 6.933%; /*26/375*/
+        padding-left: 110px;
     }
     .banner_txt_v1 p {
         font-size: 1.5rem;
-        line-height: 1.466; /*22/15*/
         font-family: 'SUIT-Medium', sans-serif;
         color: #fff;
         padding-top: 12px;
@@ -1780,23 +1798,22 @@ main {padding-top: 150px;}
     .banner_txt_v1 p span {display: block;}
     .banner_txt_v1 strong {
         width: 100%;
-        font-size: 2.6rem;
-        line-height: 1.538; /*40/26*/
+        font-size: 4.5rem;
+        line-height: 1.444; /*65/45*/
         color: #fff;
     }
-    .banner_txt_v1 strong span {display: block;}
     .banner_txt_v1 a {
         display: inline-block;
-        width: 100px;
-        height: 50px;
-        line-height: 50px;
+        width: 110px;
+        height: 60px;
+        line-height: 60px;
         border: 2px solid #fff;
         font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
         color: #fff;
         margin: 0 auto;
         text-align: center;
-        margin-top: 45px;
+        margin-top: 75px;
     }
 
     .v2 {position: relative;}
@@ -1804,24 +1821,23 @@ main {padding-top: 150px;}
         display: block;
         width: 100%;
         height: 764PX;
-        background: url(../img/fresh-visual-02.png) no-repeat center/cover;
+        background: url(/fresh/img/fresh-visual-02-pc.png) no-repeat center/cover;
     }
     .banner_txt_v2 {
         position: absolute;
-        padding-top: 473px;
+        padding-top: 360px;
         left: 0;
         top: 0;
         width: 100%;
         height: auto;
-        padding-left: 6.933%; /*26/375*/
+        padding-left: 110px;
     }
     .banner_txt_v2 strong {
         width: 100%;
-        font-size: 2.6rem;
-        line-height: 1.538; /*40/26*/
+        font-size: 4.5rem;
+        line-height: 1.444; /*65/45*/
         color: #000;
     }
-    .banner_txt_v2 strong > span {display: block;}
     .banner_txt_v2 p {
         font-size: 1.5rem;
         line-height: 1.466; /*22/15*/
@@ -1832,16 +1848,16 @@ main {padding-top: 150px;}
     .banner_txt_v2 p span {display: block;}
     .banner_txt_v2 a {
         display: inline-block;
-        width: 100px;
-        height: 50px;
-        line-height: 50px;
+        width: 110px;
+        height: 60px;
+        line-height: 60px;
         border: 2px solid #000;
         font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
         color: #000;
         margin: 0 auto;
         text-align: center;
-        margin-top: 45px;
+        margin-top: 75px;
     }
 
     .v3 {position: relative;}
@@ -1849,21 +1865,20 @@ main {padding-top: 150px;}
         display: block;
         width: 100%;
         height: 764PX;
-        background: url(../img/fresh-visual-03.jpg) no-repeat center/cover;
+        background: url(/fresh/img/fresh-visual-03-pc.png) no-repeat center/cover;
     }
     .banner_txt_v3 {
         position: absolute;
-        padding-top: 515px;
+        padding-top: 400px;
         left: 0;
         top: 0;
         width: 100%;
         height: auto;
-        padding-left: 6.933%; /*26/375*/
+        padding-left: 110px;
     }
     .banner_txt_v3 strong {
         width: 100%;
-        font-size: 2.6rem;
-        line-height: 1.538; /*40/26*/
+        font-size: 4.5rem;
         color: #fff;
     }
     .banner_txt_v3 p {
@@ -1876,16 +1891,16 @@ main {padding-top: 150px;}
     .banner_txt_v3 p span {display: block;}
     .banner_txt_v3 a {
         display: inline-block;
-        width: 100px;
-        height: 50px;
-        line-height: 50px;
+        width: 110px;
+        height: 60px;
+        line-height: 60px;
         border: 2px solid #fff;
         font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
         color: #fff;
         margin: 0 auto;
         text-align: center;
-        margin-top: 45px;
+        margin-top: 75px;
     }
 
     .v4 {position: relative;}
@@ -1893,24 +1908,23 @@ main {padding-top: 150px;}
         display: block;
         width: 100%;
         height: 764PX;
-        background: url(../img/fresh-visual-04.jpg) no-repeat center/cover;
+        background: url(/fresh/img/fresh-visual-04-pc.png) no-repeat center/cover;
     }
     .banner_txt_v4 {
         position: absolute;
-        padding-top: 522px;
+        padding-top: 400px;
         left: 0;
         top: 0;
         width: 100%;
         height: auto;
-        padding-left: 6.933%; /*26/375*/
+        padding-left: 110px;
     }
     .banner_txt_v4 strong {
         width: 100%;
-        font-size: 2.6rem;
-        line-height: 1.538; /*40/26*/
+        font-size: 4.5rem;
+        line-height: 1.444; /*65/45*/
         color: #000;
     }
-    .banner_txt_v4 strong > span {display: block;}
     .banner_txt_v4 p {
         font-size: 1.5rem;
         line-height: 1.466; /*22/15*/
@@ -1921,16 +1935,16 @@ main {padding-top: 150px;}
     .banner_txt_v4 p span {display: block;}
     .banner_txt_v4 a {
         display: inline-block;
-        width: 100px;
-        height: 50px;
-        line-height: 50px;
+        width: 110px;
+        height: 60px;
+        line-height: 60px;
         border: 2px solid #000;
         font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
         color: #000;
         margin: 0 auto;
         text-align: center;
-        margin-top: 45px;
+        margin-top: 75px;
     }
 
     .slick-dots {
@@ -1968,7 +1982,7 @@ main {padding-top: 150px;}
 
     /* mainContents */
     #mainContents {}
-    main {padding-top: 150px;}
+    main {padding-top: 200px;}
 
     #brand {
         left: 0;
@@ -1979,116 +1993,127 @@ main {padding-top: 150px;}
         counter-reset: number;
         display: block;
         position: relative;
-        width: 100%;
+        width: 47%;
         height: 1000px;
+        margin-left: 100px;
         background: url(../img/fresh-brand-01.jpg) no-repeat center/cover;
     }
 
     .brand_inner:after {
         content: "";
-        display: block;
+        display: none;
         width: 100%;
         height: 1000px;
         background: url(../img/fresh-bg-black30.png) no-repeat center/cover;
+    }
+    .inner_txt {
+        position: relative;
+        left: 100%;
+        height: 1000px;
     }
 
     .brand_title {}
     .brand_title h2 {
         position: absolute;
-        padding-top: 150px;
-        padding-right: 6.666%;
-        font-size: 4.5rem;
+        padding-top: 75px;
+        padding-left: 120px;
+        font-size: 5rem;
         font-weight: normal;
         line-height: 1.444; /*65/45*/
-        text-align: right;
-        color: #fff;
+        text-align: left;
+        color: #000;
     }
     .brand_title h2 span {display: inline-block;}
     .brand_title p {
         position: absolute;
-        margin-top: 290px;
-        padding-right: 6.666%;
-        font-size: 1.7rem;
+        margin-top: 155px;
+        padding-left: 125px;
+        font-size: 1.8rem;
         font-weight: normal;
         font-family: 'SUIT-Medium', sans-serif;
-        line-height: 1.235; /*21/17*/
-        text-align: right;
-        color: #fff;
+        line-height: 1.666; /*30/18*/
+        text-align: left;
+        color: #000;
     }
-    .brand_title p span {display: inline-block;}
     .brandList {position: relative;}
 
     .list_1 {
         position: absolute;
+        width: 530px;
         left: 0;
-        top: 480px;
-        padding-left: 13%;
+        top: 300px;
+        padding-left: -30px;
         padding-right: 6.666%; 
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
-        line-height: 1.786; /*25/14*/
-        color: #fff;
+        line-height: 2; /*30/15*/
+        color: #000;
+        word-break:break-all;
     }
 
     .list_2 {
         position: absolute;
+        width: 530px;
         left: 0;
-        top: 590px;
-        padding-left: 13%;
+        top: 450px;
+        padding-left: -30px;
         padding-right: 6.666%; 
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
-        line-height: 1.786; /*25/14*/
-        color: #fff;
+        line-height: 2; /*30/15*/
+        color: #000;
+        word-break:break-all;
     }
 
     .list_3 {
         position: absolute;
+        width: 530px;
         left: 0;
-        top: 730px;
-        padding-left: 13%;
+        top: 650px;
+        padding-left: -20px;
         padding-right: 6.666%; 
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
-        line-height: 1.786; /*25/14*/
-        color: #fff;
+        line-height: 2; /*30/15*/
+        color: #000;
+        word-break:break-all;
     }
 
 
     .brand_list li:before {
         position: absolute;
-        left: 2.5%; 
+        left: 120px; 
         top: -5px;
         counter-increment: number;
         content: counter(number);
-        font-size: 6rem;
+        font-size: 7.5rem;
         font-family: 'Jeju Myeongjo', serif;
         line-height: 1;
-        color: #fff;
+        color: #000;
     }
     .brand_list_btn {
         position: absolute;
         display: inline-block;
         bottom: 0;
-        width: 100px;
-        height: 50px;
-        left: 65.6%; /*246/375*/
+        width: 130px;
+        height: 70px;
+        left: 120px;
         bottom: 40px;
-        line-height: 50px;
-        border: 2px solid #fff;
+        line-height: 70px;
+        border: 2px solid #000;
         margin: 0 auto;
         text-align: center;
     }
     .brand_list_btn button {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-family: 'SUIT-Medium';
-        color: #fff;
+        color: #000;
     }
 
 
 
     #BestSeller {
-        margin-top: 150px;
+        margin-top: 200px;
         width: 100%;
         height: 1255px;
         background: url(../img/fresh-bg-01.png) no-repeat center/cover;
@@ -2098,7 +2123,7 @@ main {padding-top: 150px;}
         left: 0;
         top: 0;
         width: 100%;
-        padding-left: 6.666%; /*25/375*/
+        padding-left: 105px;
     }
 
     .BestSeller_inner_left h2 {
@@ -2120,33 +2145,34 @@ main {padding-top: 150px;}
         width: 150px;
         height: 60px;
         line-height: 60px;
-        border: 3px solid #fff;
-        font-size: 1.6rem;
+        border: 2px solid #fff;
+        font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
         color: #fff;
         margin: 0 auto;
         text-align: center;
         margin-top: 50px;
     }
-    .BestSeller_inner_right {width: 86.133%; /*323/375*/}
+    .BestSeller_inner_right {width: 1451px;}
     .prdList {}
     .slick_list {}
 
     .slick_active01 {}
     .item01 {
         position: absolute;
-        left: 7.2%;
-        top: 2274px;
-        width: 154px;
-        height: 400px;
+        left: 280px;
+        top: 2314px;
+        width: 340px;
+        height: 550px;
         background-color: #fff;
     }
     .thumbnail01 {padding: 10px;}
     .prdImg01 {}
     .prdImg01 a {display: block;}
     .prdImg01 a img{
-        width: 134px;
-        height: 260px;
+        width: 320px;
+        height: 350px;
+        content: url(/fresh/img/fresh-bestseller-01-1920.png);
     }
 
     .description01 {
@@ -2157,23 +2183,23 @@ main {padding-top: 150px;}
     .floatleft01 {
         float: left;
         text-align: left;
-        margin-top: 23px;
-        margin-left: 5px;
-        font-size: 1.2rem;
+        margin-top: 70px;
+        margin-left: 13px;
+        font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
         color: #000;
     }
     .floatleft01 strong {}
-    .floatleft01 strong span {display: inline-block;}
 
     .floatright01 {
         position: absolute;
         text-align: right;
         font-size: 1.2rem;
         font-family: 'SUIT-Medium', sans-serif;
+        font-weight: normal;
         color: #000;
-        padding-top: 8px;
-        margin-left: 88px;
+        padding-top: 70px;
+        margin-left: 280px;
     }
     .floatright01 ul {}
     .floatright01 ul li {}
@@ -2181,17 +2207,17 @@ main {padding-top: 150px;}
 
     .btn_wrap01 {
         display: inline-block;
-        width: 134px;
-        height: 45px;
-        line-height: 45px;
+        width: 314px;
+        height: 54px;
+        line-height: 54px;
         background-color: #F0F0F0;
         margin: 0 auto;
-        margin-left: 10px;
-        margin-top: 15px;
+        margin-left: 13px;
+        margin-top: 10px;
     }
     .btn_txt01 {
-        padding-left: 45px;
-        font-size: 1.8rem;
+        padding-left: 130px;
+        font-size: 2.5rem;
         font-family: 'SUIT-Medium', sans-serif;
         color: #848484;
     }
@@ -2206,8 +2232,8 @@ main {padding-top: 150px;}
     .slick_active02 {float: right;}
     .item02 {
         position: absolute;
-        right: 6.933%; /*26/375*/
-        top: 2274px;
+        right: 735px;
+        top: 2314px;
         width: 154px;
         height: 400px;
         background-color: #fff;
@@ -2235,7 +2261,6 @@ main {padding-top: 150px;}
         color: #000;
     }
     .floatleft02 strong {}
-    .floatleft02 strong span {display: inline-block;}
 
     .floatright02 {
         position: absolute;
@@ -2278,7 +2303,7 @@ main {padding-top: 150px;}
     .item03 {
         position: absolute;
         left: 7.2%;
-        top: 2699px;
+        top: 2314px;
         width: 154px;
         height: 400px;
         background-color: #fff;
@@ -2306,7 +2331,6 @@ main {padding-top: 150px;}
         color: #000;
     }
     .floatleft03 strong {}
-    .floatleft03 strong span {display: inline-block;}
 
     .floatright03 {
         position: absolute;
@@ -2350,7 +2374,7 @@ main {padding-top: 150px;}
     .item04 {
         position: absolute;
         right: 6.933%; /*26/375*/
-        top: 2699px;
+        top: 2314px;
         width: 154px;
         height: 400px;
         background-color: #fff;
@@ -2371,14 +2395,13 @@ main {padding-top: 150px;}
     .floatleft04 {
         float: left;
         text-align: left;
-        margin-top: 23px;
-        margin-left: 5px;
-        font-size: 1.2rem;
+        margin-top: 50px;
+        margin-left: 10px;
+        font-size: 2.2rem;
         font-family: 'SUIT-Medium', sans-serif;
         color: #000;
     }
     .floatleft04 strong {}
-    .floatleft04 strong span {display: inline-block;}
 
     .floatright04 {
         position: absolute;
@@ -2876,8 +2899,8 @@ main {padding-top: 150px;}
 
 
     #fresh {
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 200px;
+        padding-bottom: 200px;
         left: 0;
         top: 0;
         width: 100%;
@@ -2886,107 +2909,120 @@ main {padding-top: 150px;}
         counter-reset: number;
         display: block;
         position: relative;
-        width: 100%;
+        width: 50%;
         height: 1000px;
+        left: 700px;
+        margin-left: 50px;
         background: url(../img/fresh-brand-02.jpg) no-repeat center/cover
     }
     .fresh_inner:after {
         content: "";
-        display: block;
+        display: none;
         width: 100%;
         height: 1000px;
         background: url(../img/fresh-bg-black15.png) no-repeat center/cover;
     }
 
+    .inner_txt2 {
+        position: relative;
+        right: 650px;
+        height: 1000px;
+    }
     .fresh_title {}
     .fresh_title h2 {
         position: absolute;
-        padding-top: 150px;
-        padding-left: 6.666%; /*25/375*/
-        font-size: 4.5rem;
+        padding-top: 80px;
+        padding-right: 100px;
+        font-size: 6.5rem;
         font-weight: normal;
         line-height: 1.444; /*65/45*/
         text-align: left;
-        color: #fff;
+        color: #000;
     }
     .fresh_title p {
         position: absolute;
-        margin-top: 220px;
-        padding-left: 6.666%; /*25/375*/
-        font-size: 1.7rem;
+        margin-top: 180px;
+        padding-right: 105px;
+        font-size: 1.8rem;
         font-weight: normal;
         font-family: 'SUIT-Medium', sans-serif;
         line-height: 1.235; /*21/17*/
         text-align: left;
-        color: #fff;
+        color: #000;
     }
 
     .freshList {position: relative;}
     .fresh_list {}
     .list_4 {
         position: absolute;
+        width: 520px;
         left: 0;
-        top: 380px;
-        padding-left: 13%;/*70/375*/
-        padding-right: 6.666%; /*25/375*/
-        font-size: 1.4rem;
+        top: 300px;
+        padding-left: -30px;
+        padding-right: 6.666%; 
+        font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
-        line-height: 1.786; /*25/14*/
-        color: #fff;
+        line-height: 2; /*30/15*/
+        color: #000;
+        word-break:break-all;
     }
     .list_5 {
         position: absolute;
+        width: 520px;
         left: 0;
-        top: 490px;
+        top: 480px;
         padding-left: 13%;/*70/375*/
-        padding-right: 6.666%; /*25/375*/
-        font-size: 1.4rem;
+        padding-right: 6.666%; 
+        font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
-        line-height: 1.786; /*25/14*/
-        color: #fff;
+        line-height: 2; /*30/15*/
+        color: #000;
+        word-break:break-all;
     }
     .list_6 {
         position: absolute;
+        width: 520px;
         left: 0;
-        top: 590px;
+        top: 650px;
         padding-left: 13%;/*70/375*/
-        padding-right: 6.666%; /*25/375*/
-        font-size: 1.4rem;
+        padding-right: 6.666%; 
+        font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
-        line-height: 1.786; /*25/14*/
-        color: #fff;
+        line-height: 2; /*30/15*/
+        color: #000;
+        word-break:break-all;
     }
     .fresh_list li:before {
         position: absolute;
-        left: 2.5%; /*25/375*/
+        left: 50px;
         top: -5px;
         counter-increment: number;
         content: counter(number);
-        font-size: 6rem;
+        font-size: 7.5rem;
         font-family: 'Jeju Myeongjo', serif;
         line-height: 1;
-        color: #fff;
+        color: #000;
     }
     .fresh_list_btn {
         position: absolute;
         display: inline-block;
         bottom: 0;
-        width: 100px;
-        height: 50px;
-        line-height: 50px;
-        border: 2px solid #fff;
+        width: 130px;
+        height: 70px;
+        line-height: 70px;
+        border: 2px solid #000;
         font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
-        color: #fff;
+        color: #000;
         margin: 0 auto;
         text-align: center;
         left: 8%; /*30/375*/
-        bottom: 70px;
+        bottom: 60px;
     }
     .fresh_list_btn button {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-family: 'SUIT-Medium';
-        color: #fff;
+        color: #000;
     }
 
 
