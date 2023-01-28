@@ -910,12 +910,12 @@ main {padding-top: 100px;}
     position: absolute;
     width: 15px;
     height: 15px;
-    background-image: url(/fresh/img/fresh-icon-arrowright.svg);
+    background-image: url(/fresh/img/fresh-icon-arrowright-dark.png);
     background-size: 15px auto;
     background-position: center;
     background-repeat: no-repeat;
-    right: 3.466%; /*13/375*/
-    top: 2110px;
+    right: 0.533%; /*2/375*/
+    top: 2065px;
 }
 
 
@@ -1144,12 +1144,12 @@ main {padding-top: 100px;}
     position: absolute;
     width: 15px;
     height: 15px;
-    background-image: url(/fresh/img/fresh-icon-arrowright.svg);
+    background-image: url(/fresh/img/fresh-icon-arrowright-dark.png);
     background-size: 15px auto;
     background-position: center;
     background-repeat: no-repeat;
-    right: 3.466%; /*13/375*/
-    top: 3210px;
+    right: 0.533%; /*2/375*/
+    top: 3165px;
 }
 
 
@@ -1494,8 +1494,25 @@ main {padding-top: 100px;}
 .footer {}
 .clearfix {}
 .floatright_footer {
+    position: relative;
     text-align: left;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
+.footer_logo {
+    position: absolute;
+    left: 6.933%;/*26/375*/
+    top: 800px;
+    padding-top: 20px;
+}
+.footer_logo img {
+    width: 130px;
+    height: 70px;
+}
+
+
+
 .footer_accordion {padding: 30px 0 0 30px;}
 .floatleft_footer {}
 .floatleft_footer ul a{
@@ -1534,10 +1551,6 @@ main {padding-top: 100px;}
     margin: 20px 0;
     margin-left: 26px;
 }
-.floatleft_logo img {
-    width: 130px;
-    height: 70px;
-}
 .copyrights_small_txt {
     font-size: 1rem;
     font-family: 'SUIT-Medium';
@@ -1554,7 +1567,7 @@ main {padding-top: 100px;}
 
 /* end mobile */
 
-/* start 1280 */
+/* start pc */
 @media all and (min-width:1280px) {
     #wrap{}
     header {
@@ -1656,7 +1669,8 @@ main {padding-top: 100px;}
         display:block; 
         text-indent:0; 
         overflow:visible; 
-        background: none;    
+        background: none;  
+      
     }
     .btn_search {
         position: relative;
@@ -1672,15 +1686,14 @@ main {padding-top: 100px;}
         margin-top: -34px;
         margin-left: -40px;
     }
-    .btn_search_line {
-        position: absolute;
+    .btn_search_img_wrap::after {
+        content: '';
         display: block;
-        width: 83%;
-        left: 0;
-        bottom: 5px;
+        position: absolute;
+        width: 125px;
+        left: -161px;
+        top: 5px;
         border-bottom: 1px solid #183A31;
-        border-color: #183A31;
-        transition: all .5s liner;
     }
 
 
@@ -1997,7 +2010,7 @@ main {padding-top: 100px;}
 
 
 
-    /* mainContents */
+    /* mainContents - pc*/
     #mainContents {}
     main {padding-top: 200px;}
 
@@ -2025,7 +2038,7 @@ main {padding-top: 100px;}
     }
     .inner_txt {
         position: relative;
-        left: 100%;
+        left: 780px;
         height: 1000px;
     }
 
@@ -2464,7 +2477,7 @@ main {padding-top: 100px;}
         width: 40px;
         height: 40px;
         background-image: url(/fresh/img/fresh-icon-arrowright-grey.png);
-        background-size: 15px auto;
+        background-size: 20px auto;
         background-position: center;
         background-repeat: no-repeat;
         right: 17px; 
@@ -2694,7 +2707,7 @@ main {padding-top: 100px;}
         width: 40px;
         height: 40px;
         background-image: url(/fresh/img/fresh-icon-arrowright-dark.png);
-        background-size: 15px auto;
+        background-size: 20px auto;
         background-position: center;
         background-repeat: no-repeat;
         right: 17px; 
@@ -2878,7 +2891,7 @@ main {padding-top: 100px;}
         border-radius: 50%;
     }
     .Co_item04 a {display: block;}
-    .Co_thumbnail04 {padding:;}
+    .Co_thumbnail04 {padding:0;}
     .Co_prdImg04 {}
     .Co_prdImg04 img {
         width: 300px;
@@ -2906,17 +2919,18 @@ main {padding-top: 100px;}
         text-align: center;
         padding-top: 12px;
     }
-
-    .Co_slick_active05 {display: none;}
-    .Co_item05 {}
-    .Co_thumbnail05 {}
-    .Co_prdImg05 {}
-    .Co_prdImg05 a {}
-    .Co_prdImg05 a img {}
-    .Co_description05 {}
-    .Co_btn_wrap05 {}
-    .Co_btn_txt05 {}
-    .Co_btn_txt_small05 {}
+    .slick-arrow3 {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-image: url(/fresh/img/fresh-icon-arrowright-dark.png);
+        background-size: 20px auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        right: 5px;
+        top: 4935px;
+    }
 
 
     #fresh {
@@ -2992,7 +3006,7 @@ main {padding-top: 100px;}
         width: 520px;
         left: 0;
         top: 480px;
-        padding-left: 13%;/*70/375*/
+        padding-left: -30px;
         padding-right: 6.666%; 
         font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
@@ -3005,7 +3019,7 @@ main {padding-top: 100px;}
         width: 520px;
         left: 0;
         top: 650px;
-        padding-left: 13%;/*70/375*/
+        padding-left: -30px;
         padding-right: 6.666%; 
         font-size: 1.5rem;
         font-family: 'SUIT-Medium', sans-serif;
@@ -3048,7 +3062,7 @@ main {padding-top: 100px;}
 
 
 
-    /* footer - mobile */
+    /* footer - pc*/
     #footer {
         left: 0;
         top: 0;
@@ -3061,9 +3075,24 @@ main {padding-top: 100px;}
     .footer {}
     .clearfix {}
     .floatright_footer {
+        position: relative;
         text-align: left;
+        left: 0;
+        top: 0;
+        width: 100%;
     }
-    .footer_accordion {padding: 30px 0 0 30px;}
+    .footer_logo {
+        position: absolute;
+        border-top: 1px solid #707070;
+        margin-top: 45px;
+        padding-left: 105px;
+    }
+    .footer_logo img {
+        width: 130px;
+        height: 70px;
+    }
+
+    .footer_accordion {padding: 95px 0 0 429px;}
     .floatleft_footer {}
     .floatleft_footer ul a{
         font-size: 1.5rem;
@@ -3072,11 +3101,14 @@ main {padding-top: 100px;}
         line-height: 2.666;/*40/15*/
     }
     .large_txt {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         color: #fff;
         margin: 25px 0;
         cursor: pointer;
     }
+    .large_txt:nth-of-type(2) {float: left;}
+    .large_txt:nth-child(3) {float: right;}
+    .large_txt:nth-child(4) {float: right;}
     .hide {display: none;}
 
     .copyrights_wrap {}
@@ -3094,16 +3126,6 @@ main {padding-top: 100px;}
         color: #DFDFDF;
         padding-left: 30px; 
         line-height: 1.25; /*15/12*/
-    }
-
-    .floatleft_logo {
-        border-top: 1px solid #707070;
-        margin: 20px 0;
-        margin-left: 26px;
-    }
-    .floatleft_logo img {
-        width: 130px;
-        height: 70px;
     }
     .copyrights_small_txt {
         font-size: 1rem;
